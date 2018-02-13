@@ -49,34 +49,6 @@ docker info | grep Cgroup
 Cgroup Driver: systemd
 ```
 
-# Using Vagrant
-
-## Requirements
-- Vagrant 1.9+
-- Go version 1.8+
-- 10GB+ free space
-
-## Install vagrant-openshift plugin
-
-```sh
-vagrant plugin install vagrant-openshift
-```
-## Clone openshift repo
-
-This will take time as it needs to download 5GB
-```sh
-vagrant origin-local-checkout
-```
-
-## Initialize local vagrant conf
-```sh
-vagrant origin-init --stage inst --os rhel7 openshift3
-```
-## Start the machine
-This will take time as it needs to download 5.5GB
-```sh
-vagrant up --provider=virtualbox
-```
 # Running openshift via minishift (Recommended setup)
 
 ## Download minishift
